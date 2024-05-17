@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form3Controller">
+   <children>
+      <TabPane layoutY="57.0" prefHeight="740.0" prefWidth="1300.0" rotateGraphic="true" style="-fx-border-color: black; -fx-border-width: 0 0 1 0; -fx-border-style: solid; -fx-background-color: #999;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="1300.0">
+                     <children>
+                        <VBox layoutY="14.0" prefHeight="711.0" prefWidth="1300.0" spacing="20.0">
+                           <children>
+                              <HBox prefHeight="120.0" prefWidth="1300.0" spacing="20.0">
+                                 <children>
+                                    <BorderPane prefHeight="113.0" prefWidth="300.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="100.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="bgn_stş_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="TL">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <Label opacity="0.65" text="Bugünün Satışı">
+                                                   <font>
+                                                      <Font name="Candara Light" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/dollar-sign-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center>
+                                    </BorderPane>
+                                    <BorderPane prefHeight="113.0" prefWidth="300.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="dün_stş_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="TL">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label opacity="0.65" text="Dünkü Satış">
+                                                   <font>
+                                                      <Font name="Candara Light" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/dollar-sign-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="113.0" prefWidth="300.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="sn7_stş_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="TL">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label opacity="0.65" text="Son 7 Günün Satışı">
+                                                   <font>
+                                                      <Font name="Candara Light" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/dollar-sign-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="113.0" prefWidth="300.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="buay_stş_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="TL">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label text="Bu Ay Toplam Satış">
+                                                   <font>
+                                                      <Font name="Candara Light" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/dollar-sign-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center></BorderPane>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="120.0" prefWidth="1300.0" spacing="20.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="tplm_stş_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="TL">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label opacity="0.65" text="Toplam  Satış">
+                                                   <font>
+                                                      <Font name="Candara Light" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/dollar-sign-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="tplm_şoför_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label opacity="0.65" text="Toplam Şoför">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/id-card-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="tplm_mştr_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label opacity="0.65" text="Müşteri">
+                                                   <font>
+                                                      <Font name="Candara Light" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/user-tie-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <left>
+                                          <VBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="115.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="tplm_araç_lbl" text="0">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label opacity="0.65" text="Araç">
+                                                   <font>
+                                                      <Font name="Candara Light" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </left>
+                                       <center>
+                                          <ImageView fitHeight="67.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                             <image>
+                                                <Image url="@../../icons/truck-solid.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </center></BorderPane>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="332.0" prefWidth="1300.0" spacing="20.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <center>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox prefHeight="62.0" prefWidth="630.0">
+                                                   <children>
+                                                      <Label text="Son 10 Satış">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <padding>
+                                                      <Insets left="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <TableView fx:id="Son10Satış_tblview" prefHeight="278.0" prefWidth="630.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="Col_son10satış_ID" prefWidth="75.0" text="ID" />
+                                                    <TableColumn fx:id="Col_son10satış_tarih" prefWidth="75.0" text="Tarih" />
+                                                      <TableColumn fx:id="Col_son10satış_müşteri" prefWidth="75.0" text="Müşteri" />
+                                                      <TableColumn fx:id="Col_son10satış_ürün" prefWidth="75.0" text="Ürün" />
+                                                      <TableColumn fx:id="Col_son10satış_miktar" prefWidth="75.0" text="Miktar" />
+                                                      <TableColumn fx:id="Col_son10satış_tutar" prefWidth="75.0" text="Tutar" />
+                                                  </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <center>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox prefHeight="62.0" prefWidth="630.0">
+                                                   <children>
+                                                      <Label text="Son 10 Ödeme">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" top="20.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <TableView fx:id="Son10Ödeme_tblview" prefHeight="275.0" prefWidth="630.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="Col_son10ödeme_tarih" prefWidth="75.0" text="Tarih" />
+                                                    <TableColumn fx:id="Col_son10ödeme_müşteriad" prefWidth="75.0" text="Müşteri Ad" />
+                                                      <TableColumn fx:id="Col_son10ödeme_müşterisoyad" prefWidth="75.0" text="Müşteri Soyad" />
+                                                      <TableColumn fx:id="Col_son10ödeme_ürünad" prefWidth="75.0" text="Ürün Adı" />
+                                                      <TableColumn fx:id="Col_son10ödeme_tutar" prefWidth="75.0" text="Tutar" />
+                                                  </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </center></BorderPane>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Satışlar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="710.0" prefWidth="1300.0" spacing="10.0">
+                           <children>
+                              <HBox prefHeight="165.0" prefWidth="1300.0" spacing="10.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label fx:id="stş_arç_lbl" text="Araçlar" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="stş_arç_view" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_stş_arçID" maxWidth="30.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_stş_arçMarka" prefWidth="75.0" text="Marka" />
+                                                <TableColumn fx:id="Col_stş_arçKm" prefWidth="75.0" text="Km" />
+                                                <TableColumn fx:id="Col_stş_arçBakım" prefWidth="75.0" text="Bakımı" />
+                                                <TableColumn fx:id="Col_stş_arçYakıt" prefWidth="75.0" text="Yakıt" />
+                                                <TableColumn fx:id="Col_stş_arçŞoförad" prefWidth="75.0" text="Şoförü" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <bottom>
+                                          <VBox alignment="TOP_CENTER" prefHeight="104.0" prefWidth="427.0" spacing="30.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="427.0" spacing="5.0">
+                                                   <children>
+                                                      <Label fx:id="stş_arçID_lbl" text="Lütfen bir Araç Seçin" textFill="RED" />
+                                                      <TextField fx:id="stş_ürnstş_txt" accessibleText="getAccessibleText(1,2,3,4,5,6,7,8,9,0)" maxWidth="100.0" promptText="Kaç Kg">
+                                                         <font>
+                                                            <Font size="13.0" />
+                                                         </font>
+                                                      </TextField>
+                                                      <Label>
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="stş_şfrID_lbl" text="Lütfen bir Şoför Seçin" textFill="RED" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="4.0" prefWidth="427.0" spacing="20.0">
+                                                   <children>
+                                                      <Button fx:id="tbllr_gncll_btn" mnemonicParsing="false" onAction="#tbllr_gncll_Click" style="-fx-background-color: linear-gradient(to right,         rgba(0, 128, 128, 1),         rgba(0, 128, 128, 0.9),         rgba(0, 128, 128, 0.8),         rgba(0, 128, 128, 0.7),         rgba(0, 128, 128, 0.6),         rgba(0, 128, 128, 0.5),         rgba(0, 128, 128, 0.4),         rgba(0, 128, 128, 0.3),         rgba(0, 128, 128, 0.2),         rgba(0, 128, 128, 0.1)    );" text="Güncelle" />
+                                                      <Button fx:id="stş_stşyap_btn" mnemonicParsing="false" onAction="#stş_stşyap_Click" style="-fx-border-radius: 100; -fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Satış" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </bottom>
+                                       <center>
+                                          <HBox alignment="CENTER" prefHeight="69.0" prefWidth="427.0" spacing="100.0" BorderPane.alignment="BOTTOM_CENTER">
+                                             <children>
+                                                <Label fx:id="stş_mştrID_lbl" text="Lütfen Bir Müşteri Seçin" textFill="#eb0000" />
+                                                <Label fx:id="stş_ürnID_lbl" text="Lütfen Bir Ürün Seçin" textFill="RED" />
+                                             </children>
+                                          </HBox>
+                                       </center>
+                                    </BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label fx:id="stş_şfr_lbl" text="Şoförler" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="stş_şfr_view" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_stş_şfrID" maxWidth="30.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_stş_şfradı" prefWidth="75.0" text="Adı" />
+                                                <TableColumn fx:id="Col_stş_şfrsoyad" prefWidth="75.0" text="Soyadı" />
+                                                <TableColumn fx:id="Col_stş_şfrtel" prefWidth="75.0" text="Tel" />
+                                                <TableColumn fx:id="Col_stş_şfrtarih" prefWidth="75.0" text="Kayıt Tarihi" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center></BorderPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="240.0" prefWidth="1300.0" spacing="10.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Müşteriler" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="stş_müşteriler_view" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_stşmştr_ID" maxWidth="30.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_stşmştr_ad" prefWidth="75.0" text="Ad" />
+                                                <TableColumn fx:id="Col_stşmştr_soyad" prefWidth="75.0" text="Soyad" />
+                                                <TableColumn fx:id="Col_stşmştr_tel" prefWidth="75.0" text="Tel" />
+                                                <TableColumn fx:id="Col_stşmştr_email" prefWidth="75.0" text="Email" />
+                                                <TableColumn fx:id="Col_stşmştr_tarih" prefWidth="75.0" text="Kayıt Tarihi" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Ürünler" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="stş_ürünler_view" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_stşürn_ID" maxWidth="30.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_stşürn_ad" prefWidth="75.0" text="Ürün Adı" />
+                                                <TableColumn fx:id="Col_stşürn_kgfiyat" prefWidth="75.0" text="KgFiyat" />
+                                                <TableColumn fx:id="Col_stşürn_mevcut" prefWidth="75.0" text="Mevcut Kg" />
+                                                <TableColumn fx:id="Col_stşürn_durum" prefWidth="75.0" text="Durumu" />
+                                                <TableColumn fx:id="Col_stşürn_tarih" prefWidth="75.0" text="Tarihi" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="245.0" prefWidth="1300.0" spacing="10.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Satışlar" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="stş_Satışlar_view" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_stş_ID" maxWidth="30.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_stş_ad" prefWidth="75.0" text="ÜrünAd" />
+                                                <TableColumn fx:id="Col_stş_mştID" prefWidth="75.0" text="MüşteriID" />
+                                                <TableColumn fx:id="Col_stş_miktar" prefWidth="75.0" text="Miktar Kg" />
+                                                <TableColumn fx:id="Col_stş_topkazanç" prefWidth="75.0" text="TopFiyat" />
+                                                <TableColumn fx:id="Col_stş_tarih" prefWidth="75.0" text="Tarihi" />
+                                                <TableColumn fx:id="Col_stş_ödnmdurum" prefWidth="75.0" text="Ödenme Durumu" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <center>
+                                          <LineChart fx:id="satışlar_grafik" title="Satışlar" BorderPane.alignment="CENTER">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </LineChart>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Araçlar">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="700.0" prefWidth="1300.0" spacing="10.0">
+                           <children>
+                              <HBox minHeight="120.0" prefHeight="150.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Araç Ekle" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <GridPane prefHeight="91.0" prefWidth="427.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.0" minWidth="10.0" prefWidth="214.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="0.0" prefWidth="213.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="427.0" spacing="35.0" style="-fx-border-color: black;">
+                                                   <children>
+                                                      <Label text="Plaka:" />
+                                                      <TextField fx:id="arçekle_plaka_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="427.0" spacing="10.0" style="-fx-border-color: black;" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Label text="Marka:" />
+                                                      <TextField fx:id="arçekle_marka_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="427.0" spacing="10.0" style="-fx-border-color: black;" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Yakıt Türü:" />
+                                                      <TextField fx:id="arçekle_yakıttürü_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="427.0" spacing="29.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Yıl:" />
+                                                      <TextField fx:id="arçekle_yıl_txt" promptText="2024" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="17.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 1;" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label text="Araç Tipi:" />
+                                                      <TextField fx:id="arçekle_araçtipi_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" style="-fx-border-color: black; -fx-border-width: 1 1 1 1;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label text="Durum:" />
+                                                      <TextField fx:id="arçekle_durum_txt" promptText="aktif / inaktif" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center>
+                                    </BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Tablodan bir araç seçiniz." BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Bakım Durumunu Güncelle" />
+                                                   </children></HBox>
+                                                <HBox alignment="CENTER" prefHeight="44.0" prefWidth="122.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <ComboBox fx:id="araç_bakım_cmbx" prefWidth="150.0" promptText="Bakımı" />
+                                                      <Button fx:id="bkm_ony_btn" mnemonicParsing="false" onAction="#bkm_ony_Click" style="-fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Onayla" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label text="Araç Çıkar" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label text="Araç Durumunu Ayarla" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="arçsil_btn" mnemonicParsing="false" onAction="#arçsil_Click" style="-fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="Sil" />
+                                                      <Button fx:id="Id_iptl_btn" mnemonicParsing="false" onAction="#Id_iptl_Click" style="-fx-background-color: linear-gradient(to right, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <ComboBox fx:id="araç_durum_cmbx" prefWidth="150.0" promptText="Durumu" />
+                                                      <Button fx:id="drm_ony_btn" mnemonicParsing="false" onAction="#drm_ony_Click" style="-fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Onayla" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                              <HBox minHeight="150.0" prefHeight="150.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <GridPane maxHeight="100.0" prefHeight="100.0" BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="41.0" style="-fx-border-color: black;">
+                                                   <children>
+                                                      <Label text="Km:" />
+                                                      <TextField fx:id="arçekle_km_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="22.0" style="-fx-border-color: black;" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Label text="Bakımı:" />
+                                                      <TextField fx:id="arçekle_bakım_txt" promptText="var / yok" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <BorderPane.margin>
+                                                <Insets />
+                                             </BorderPane.margin>
+                                          </GridPane>
+                                       </top>
+                                       <bottom>
+                                          <HBox alignment="CENTER" maxHeight="100.0" prefHeight="50.0" prefWidth="200.0" spacing="40.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Button fx:id="arçekle_btn" mnemonicParsing="false" onAction="#arçekle_Click" style="-fx-background-color: linear-gradient(to left, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Kaydet" />
+                                                <Button fx:id="arçekle_iptl_btn" mnemonicParsing="false" onAction="#arçekle_iptl_Click" style="-fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal et" />
+                                             </children>
+                                          </HBox>
+                                       </bottom></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" minWidth="200.0" prefHeight="200.0" prefWidth="100.0">
+                                                         <children>
+                                                            <Label text="Araç Şoförünü Değiştirmek " />
+                                                            <Label text="için Tablolardan İşlem yapılacak" />
+                                                            <Label text="olanları seçiniz." />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="3.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Label text="Seçilen Araç ID'si=" />
+                                                      <Label fx:id="sçln_arçID_lbl" text="Lütfen ID seçin" textFill="RED" />
+                                                   </children></HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Sağdaki Tablodan Şoför seçiniz" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="3.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Seçilen Şoförün ID'si=" />
+                                                      <Label fx:id="sçln_şfrID_lbl" text="Lütfen ID seçin" textFill="RED" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="arç_dznl_btn" mnemonicParsing="false" onAction="#arç_dznl_Click" style="-fx-background-color: linear-gradient(to right,rgba(0, 128, 128, 1),rgba(0, 128, 128, 0.9),rgba(0, 128, 128, 0.8),rgba(0, 128, 128, 0.7),rgba(0, 128, 128, 0.6),rgba(0, 128, 128, 0.5),rgba(0, 128, 128, 0.4),rgba(0, 128, 128, 0.3),rgba(0, 128, 128, 0.2),rgba(0, 128, 128, 0.1));" text="Düzenle" />
+                                                      <Button fx:id="arçşfr_dğtr_btn" mnemonicParsing="false" onAction="#arçşfr_dğtr_Click" style="-fx-background-color: linear-gradient(to left, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Değiştir" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="arçşfr_dğtriptl_btn" mnemonicParsing="false" onAction="#arçşfr_dğtriptl_Click" style="-fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Şoförler" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="kçk_şfr_view" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_kçkşfr_ID" maxWidth="30.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_kçkşfr_Adı" prefWidth="75.0" text="Adı" />
+                                                <TableColumn fx:id="Col_kçkşfr_Soyadı" prefWidth="75.0" text="Soyadı" />
+                                                <TableColumn fx:id="Col_kçkşfr_Durum" prefWidth="75.0" text="Durumu" />
+                                                <TableColumn fx:id="Col_kçkşfr_Tarih" prefWidth="75.0" text="Kayıt Tarihi" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center></BorderPane>
+                                 </children>
+                              </HBox>
+                              <HBox minHeight="200.0" prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <BorderPane maxWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Listeyi Güncelle" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <Button fx:id="lst_update_btn" mnemonicParsing="false" onAction="#lst_update_Click" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to right,         rgba(0, 128, 128, 1),         rgba(0, 128, 128, 0.9),         rgba(0, 128, 128, 0.8),         rgba(0, 128, 128, 0.7),         rgba(0, 128, 128, 0.6),         rgba(0, 128, 128, 0.5),         rgba(0, 128, 128, 0.4),         rgba(0, 128, 128, 0.3),         rgba(0, 128, 128, 0.2),         rgba(0, 128, 128, 0.1)    );" text="Güncelle" BorderPane.alignment="CENTER" />
+                                       </center>
+                                    </BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <center>
+                                          <LineChart fx:id="arçkul_grafik" title="Aracın Kullanım Grafiği" BorderPane.alignment="CENTER">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </LineChart>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="200.0" prefHeight="179.0" prefWidth="1300.0" spacing="10.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Sahip Olunan Araçlar" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="tümaraçlar_view" minHeight="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 2 0 0 0;" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_arçId" maxWidth="50.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_arçPlaka" prefWidth="75.0" text="Plaka" />
+                                                <TableColumn fx:id="Col_arçMarka" prefWidth="75.0" text="Marka" />
+                                                <TableColumn fx:id="Col_arçYıl" prefWidth="75.0" text="Yıl" />
+                                                <TableColumn fx:id="Col_arçAraçTipi" prefWidth="75.0" text="Araç Tipi" />
+                                                <TableColumn fx:id="Col_arçDurum" prefWidth="75.0" text="Durum" />
+                                                <TableColumn fx:id="Col_arçKm" prefWidth="75.0" text="Km" />
+                                                <TableColumn fx:id="Col_arçBakım" prefWidth="75.0" text="Bakımı" />
+                                                <TableColumn fx:id="Col_arçYakıtTürü" prefWidth="75.0" text="Yakıt Türü" />
+                                                <TableColumn fx:id="Col_arçşfrAdı" maxWidth="60.0" prefWidth="75.0" text="Kullanan" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Müşteriler">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="700.0" prefWidth="1300.0" spacing="20.0">
+                           <children>
+                              <HBox maxHeight="150.0" minHeight="150.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <BorderPane maxHeight="150.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                                   <children>
+                                                      <Label text="Adı:" />
+                                                      <TextField fx:id="mştrekle_ad_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Tel No:" />
+                                                      <TextField fx:id="mştrekle_tel_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="mştr_ekle_btn" mnemonicParsing="false" onAction="#mştr_ekle_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Ekle" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Label text="Soyadı:" />
+                                                      <TextField fx:id="mştrekle_soyad_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Emaili:" />
+                                                      <TextField fx:id="mştrekle_email_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="mştr_iptl_btn" mnemonicParsing="false" onAction="#mştr_iptal_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center></BorderPane>
+                                    <BorderPane maxHeight="150.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label text="Lütfen Ödenme Durumunu" />
+                                                            <Label text="Değitirmek için Aşağıdaki" />
+                                                            <Label text="Tablodan bir ID seçiniz." />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="ödmedrmu_lbl" text="Seçilen ID" textFill="RED" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Button fx:id="ödeme_btn" mnemonicParsing="false" onAction="#ödeme_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Değiştir" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Button fx:id="ödeme_iptl_btn" mnemonicParsing="false" onAction="#ödeme_iptl_btn" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="mştr_list_updt_btn" mnemonicParsing="false" onAction="#mştr_list_updt_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right,         rgba(0, 128, 128, 1),         rgba(0, 128, 128, 0.9),         rgba(0, 128, 128, 0.8),         rgba(0, 128, 128, 0.7),         rgba(0, 128, 128, 0.6),         rgba(0, 128, 128, 0.5),         rgba(0, 128, 128, 0.4),         rgba(0, 128, 128, 0.3),         rgba(0, 128, 128, 0.2),         rgba(0, 128, 128, 0.1)    );" text="Listeleri Güncelle" />
+                                                   </children></HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center></BorderPane>
+                                    <BorderPane maxHeight="150.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Aramak istediğiniz Müşterinin Adını Soyadını Giriniz" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <GridPane prefHeight="111.0" prefWidth="420.0" BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label text="Ad:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Soyad:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="mştr_soyadara_txt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="mştr_bul_btn" mnemonicParsing="false" onAction="#mştr_bul_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Getir" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="mştr_buliptl_btn" mnemonicParsing="false" onAction="#mştr_buliptl_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="mştr_adara_txt" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                              <HBox maxHeight="150.0" minHeight="150.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                 <children>
+                                    <BorderPane maxHeight="150.0" maxWidth="420.0" minHeight="150.0" minWidth="420.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-width: 0 0 1 0;">
+                                                         <children>
+                                                            <Label text="Lütfen İlerlemek için" />
+                                                            <Label text="Aşağıdaki Tablodan" />
+                                                            <Label text="Müşteri Seçiniz." />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Button fx:id="mştr_dznl_btn" mnemonicParsing="false" onAction="#mştr_dznl_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right,         rgba(0, 128, 128, 1),         rgba(0, 128, 128, 0.9),         rgba(0, 128, 128, 0.8),         rgba(0, 128, 128, 0.7),         rgba(0, 128, 128, 0.6),         rgba(0, 128, 128, 0.5),         rgba(0, 128, 128, 0.4),         rgba(0, 128, 128, 0.3),         rgba(0, 128, 128, 0.2),         rgba(0, 128, 128, 0.1)    );" text="Düzenle" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Button fx:id="mştr_sil_btn" mnemonicParsing="false" onAction="#mştr_sil_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="Sil" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="sçlnmştr_lbl" text="Seçilen Müşteri" textFill="RED" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Ödenmeyen Satışlar Listesi" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="ödnmemiş_stş_view" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_ödnmyn_ID" maxWidth="60.0" prefWidth="60.0" text="ID" />
+                                              <TableColumn fx:id="Col_ödnmyn_mştrad" prefWidth="75.0" text="Müşteri Adı" />
+                                                <TableColumn fx:id="Col_ödnmyn_mştrsoyad" prefWidth="75.0" text="Müşteri Soyadı" />
+                                                <TableColumn fx:id="Col_ödnmyn_ürünad" prefWidth="75.0" text="Ürün Adı" />
+                                                <TableColumn fx:id="Col_ödnmyn_ürünmik" prefWidth="75.0" text="Ürün Miktarı" />
+                                                <TableColumn fx:id="Col_ödnmyn_ürünfyt" prefWidth="75.0" text="Ürün Fiyatı" />
+                                                <TableColumn fx:id="Col_ödnmyn_durum" prefWidth="75.0" text="Ödenme Durumu" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center></BorderPane>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="300.0" prefWidth="200.0">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Müşteri Listesi" BorderPane.alignment="CENTER" />
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="müşteriler_view" prefHeight="219.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_mştrId" maxWidth="60.0" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="Col_mştrAd" prefWidth="75.0" text="Adı" />
+                                                <TableColumn fx:id="Col_mştrSoyad" prefWidth="75.0" text="Soyadı" />
+                                                <TableColumn fx:id="Col_mştrTel" prefWidth="75.0" text="Tel Numarası" />
+                                                <TableColumn fx:id="Col_mştrEmail" prefWidth="75.0" text="Email" />
+                                                <TableColumn fx:id="Col_mştrTarih" prefWidth="75.0" text="Kayıt Tarihi" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Ürünler">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutY="1.0" prefHeight="699.0" prefWidth="1300.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="500.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="450.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Ürünler Listesi" BorderPane.alignment="CENTER">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font></Label>
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="ürünler_view" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <columns>
+                                              <TableColumn fx:id="Col_ürünID" maxWidth="50.0" prefWidth="50.0" text="ID" />
+                                              <TableColumn fx:id="Col_ürünAd" maxWidth="200.0" prefWidth="75.0" text="Adı" />
+                                                <TableColumn fx:id="Col_kgfiyat" maxWidth="200.0" minWidth="100.0" prefWidth="-1.0" text="1 Kg Fiyat" />
+                                                <TableColumn fx:id="Col_tplmkg" maxWidth="200.0" prefWidth="75.0" text="Toplam Kg" />
+                                                <TableColumn fx:id="Col_ürünDurum" prefWidth="75.0" text="Durumu" />
+                                                <TableColumn fx:id="Col_ürüntarih" prefWidth="75.0" text="Geliş Tarihi" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="300.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Ürün Ekle" BorderPane.alignment="CENTER">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Label>
+                                       </top>
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label text="Ürün Adı:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Kilo Başına Fiyat:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label text="Toplam Kg:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="ürnekle_ürünad_txt" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="ürnekle_kgbaşı_txt" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <TextField fx:id="ürnekle_tplmkg_txt" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <TextField fx:id="ürnekle_ürndrm_txt" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets right="5.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label text="Ürünün Durumu:" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="ürnekle_btn" mnemonicParsing="false" onAction="#ürnekle_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Ekle" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Button fx:id="ürnekle_tmzl_btn" mnemonicParsing="false" onAction="#ürnekle_tmzl_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="Temizle" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label text="Silmek ve Düzenlemek için" />
+                                                            <Label text="Ürün Seçiniz" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="ürnsec_lbl" text="Seçilen Ürün" textFill="RED" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="ürnsec_tmzl_btn" mnemonicParsing="false" onAction="#ürnsec_tmzl_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Temizle" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Button fx:id="ürn_kaldır_btn" mnemonicParsing="false" onAction="#ürn_kaldır_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="Kaldır" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Button fx:id="ürün_list_upt_btn" mnemonicParsing="false" onAction="#ürün_list_upt_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to left,         rgba(0, 128, 128, 1),         rgba(0, 128, 128, 0.9),         rgba(0, 128, 128, 0.8),         rgba(0, 128, 128, 0.7),         rgba(0, 128, 128, 0.6),         rgba(0, 128, 128, 0.5),         rgba(0, 128, 128, 0.4),         rgba(0, 128, 128, 0.3),         rgba(0, 128, 128, 0.2),         rgba(0, 128, 128, 0.1)    );" text="Listeyi Güncelle" />
+                                                   </children></HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Button fx:id="ürnblgi_updt_btn" mnemonicParsing="false" onAction="#ürnblgi_updt_Click" style="-fx-background-radius: 10; -fx-background-color: linear-gradient(to right,         rgba(0, 128, 128, 1),         rgba(0, 128, 128, 0.9),         rgba(0, 128, 128, 0.8),         rgba(0, 128, 128, 0.7),         rgba(0, 128, 128, 0.6),         rgba(0, 128, 128, 0.5),         rgba(0, 128, 128, 0.4),         rgba(0, 128, 128, 0.3),         rgba(0, 128, 128, 0.2),         rgba(0, 128, 128, 0.1)    );" text="Bilgileri Güncelle" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center></BorderPane>
+                                    <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+                                       <top>
+                                          <Label text="Ürün Bilgilerini Düzenle" BorderPane.alignment="CENTER">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Label>
+                                       </top>
+                                       <center>
+                                          <GridPane BorderPane.alignment="CENTER">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="70.0" prefWidth="143.0">
+                                                   <children>
+                                                      <Label text="Adı:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label text="Kg Başı Fiyatı:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label text="Ürünün Durumu:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="updt_ürnad_txt" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="updt_kgfiyat_txt" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <TextField fx:id="updt_ürndrm_txt" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label text="Mevcut Olan Toplam Kg:" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <TextField fx:id="updt_tplmkg_txt" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </GridPane>
+                                       </center></BorderPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Şoförler">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="83.0" layoutY="86.0" prefHeight="699.0" prefWidth="1300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox maxHeight="699.0" prefHeight="200.0" prefWidth="1300.0" spacing="15.0">
+                                 <children>
+                                    <HBox prefHeight="200.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                             <top>
+                                                <Label text="Şoför Ekle" BorderPane.alignment="CENTER" />
+                                             </top>
+                                             <center>
+                                                <GridPane maxHeight="140.0" BorderPane.alignment="CENTER">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label text="Şoförün Adı:" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                         <children>
+                                                            <TextField fx:id="şfr_eklead_txt" promptText="..." />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                         <children>
+                                                            <Label text="Şoförün Soyadı:" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <children>
+                                                            <TextField fx:id="şfr_eklesoyad_txt" promptText="..." />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                         <children>
+                                                            <Label text="Şoförün Telefon Numarası:" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <children>
+                                                            <TextField fx:id="şfr_ekletelno_txt" promptText="..." />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </GridPane>
+                                             </center>
+                                             <bottom>
+                                                <VBox maxHeight="75.0" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <RadioButton fx:id="şfr_drm_radio2" mnemonicParsing="false" text="Aktif">
+                                                               <toggleGroup>
+                                                                  <ToggleGroup fx:id="şfr_durum_radio" />
+                                                               </toggleGroup>
+                                                            </RadioButton>
+                                                            <RadioButton fx:id="şfr_drm_radio1" mnemonicParsing="false" selected="true" text="İnaktif" toggleGroup="$şfr_durum_radio" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="100.0" VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <Button fx:id="şfr_ekle_btn" mnemonicParsing="false" onAction="#şfr_ekle_Click" style="-fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Ekle" />
+                                                            <Button fx:id="şfr_ekleiptl_btn" mnemonicParsing="false" onAction="#şfr_ekleiptl_Click" style="-fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </bottom>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                             <top>
+                                                <Label text="Araç Tanımla" BorderPane.alignment="CENTER" />
+                                             </top>
+                                             <center>
+                                                <GridPane BorderPane.alignment="CENTER">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <VBox alignment="CENTER" prefHeight="61.0" prefWidth="150.0">
+                                                               <children>
+                                                                  <Label text="Lütfen Şoförler Listesinden " />
+                                                                  <Label text="Birini Seçiniz" />
+                                                               </children>
+                                                            </VBox>
+                                                            <Label fx:id="sçln_şfr_lbl" text="Seçilen Kişi" textFill="RED" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1">
+                                                         <children>
+                                                            <Label fx:id="sçln_şfrarçID_lbl" text="Seçilen Araç" textFill="RED" />
+                                                            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="130.0">
+                                                               <children>
+                                                                  <Label text="Lütfen Araç Listesinden" />
+                                                                  <Label text="Bir Aracı Seçiniz." />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                         <children>
+                                                            <Button fx:id="arç_tnmla_btn" mnemonicParsing="false" onAction="#arç_tnmla_Click" style="-fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Aracı Şoförün Üstüne Tanımla" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <children>
+                                                            <Button fx:id="arç_tnmlaiptl_btn" mnemonicParsing="false" onAction="#arç_tnmlaiptl_Click" style="-fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="İptal Et" />
+                                                         </children>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <GridPane.margin>
+                                                            <Insets />
+                                                         </GridPane.margin>
+                                                      </HBox>
+                                                   </children>
+                                                </GridPane>
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                             <top>
+                                                <Label text="Şoför Sil" BorderPane.alignment="CENTER" />
+                                             </top>
+                                             <center>
+                                                <GridPane BorderPane.alignment="CENTER">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label text="Tablodan Şoför Seçin" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1">
+                                                         <children>
+                                                            <Label text="Seçilen Şoför:" />
+                                                            <Label fx:id="sçln_şfr_fakelbl" textFill="RED" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                                         <children>
+                                                            <Button fx:id="şfr_sil_btn" mnemonicParsing="false" onAction="#şfr_sil_Click" style="-fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="Sil" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <children>
+                                                            <Button fx:id="şfr_siltmzl_btn" mnemonicParsing="false" onAction="#şfr_siltmzl_Click" style="-fx-background-color: linear-gradient(to right, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Temizle" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                                         <children>
+                                                            <Button fx:id="şfr_lstupt_btn" mnemonicParsing="false" onAction="#şfr_lstupt_Click" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to right,         rgba(0, 128, 128, 1),         rgba(0, 128, 128, 0.9),         rgba(0, 128, 128, 0.8),         rgba(0, 128, 128, 0.7),         rgba(0, 128, 128, 0.6),         rgba(0, 128, 128, 0.5),         rgba(0, 128, 128, 0.4),         rgba(0, 128, 128, 0.3),         rgba(0, 128, 128, 0.2),         rgba(0, 128, 128, 0.1)    );" text="Listeleri Güncelle" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <children>
+                                                            <Button fx:id="şfr_aktfdğş_btn" mnemonicParsing="false" onAction="#şfr_aktfdğş_Click" style="-fx-background-color: linear-gradient(to left, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%)v linear-gradient(to left, #90EE90 0%, #a6f3a6 25%, #bcf8bc 50%, #d2fdd2 75%, #e8ffe8 100%);" text="Aktifleştir" />
+                                                            <Button fx:id="şfr_aktfdğş_btn2" mnemonicParsing="false" onAction="#şfr_aktfdğş_Click2" style="-fx-background-color: linear-gradient(to left, #FFCCCC 0%, #FFB6B6 25%, #FFA1A1 50%, #FF8C8C 75%, #FF7777 100%);" text="Deaktifleştir" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </GridPane>
+                                             </center></BorderPane>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox prefHeight="200.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                             <top>
+                                                <Label text="Araç Listesi" BorderPane.alignment="CENTER" />
+                                             </top>
+                                             <center>
+                                                <TableView fx:id="şfr_arç_view" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                  <columns>
+                                                    <TableColumn fx:id="Col_şfrarç_ID" maxWidth="30.0" prefWidth="75.0" text="ID" />
+                                                    <TableColumn fx:id="Col_şfrarç_plaka" prefWidth="75.0" text="Plaka" />
+                                                      <TableColumn fx:id="Col_şfrarç_marka" prefWidth="75.0" text="Marka" />
+                                                      <TableColumn fx:id="Col_şfrarç_yıl" prefWidth="75.0" text="Yıl" />
+                                                      <TableColumn fx:id="Col_şfrarç_tipi" prefWidth="75.0" text="Araç Tipi" />
+                                                      <TableColumn fx:id="Col_şfrarç_durum" prefWidth="75.0" text="Durumu" />
+                                                      <TableColumn fx:id="Col_şfrarç_km" prefWidth="75.0" text="Km" />
+                                                      <TableColumn fx:id="Col_şfrarç_bkm" prefWidth="75.0" text="Bakımı" />
+                                                      <TableColumn fx:id="Col_şfrarç_ykttür" prefWidth="75.0" text="Yakıt Türü" />
+                                                      <TableColumn fx:id="Col_şfrarçAdı" prefWidth="75.0" text="Kullanan kişi" />
+                                                  </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </center>
+                                          </BorderPane>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox prefHeight="254.0" prefWidth="1300.0" spacing="15.0">
+                                       <children>
+                                          <BorderPane prefHeight="129.0" prefWidth="1300.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+                                             <top>
+                                                <Label text="Şoförlerin Listesi" BorderPane.alignment="CENTER" />
+                                             </top>
+                                             <center>
+                                                <TableView fx:id="şfr_view" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 1 0 0 0;" BorderPane.alignment="CENTER">
+                                                  <columns>
+                                                    <TableColumn fx:id="Col_şfr_ID" maxWidth="50.0" prefWidth="75.0" text="ID" />
+                                                    <TableColumn fx:id="Col_şfr_ad" prefWidth="75.0" text="Adı" />
+                                                      <TableColumn fx:id="Col_şfr_soyad" prefWidth="75.0" text="Soyadı" />
+                                                      <TableColumn fx:id="Col_şfr_telno" prefWidth="75.0" text="Tel Numarası" />
+                                                      <TableColumn fx:id="Col_şfr_kyttarih" prefWidth="75.0" text="Kayıt Tarihi" />
+                                                      <TableColumn fx:id="Col_şfr_durumu" prefWidth="75.0" text="Durumu" />
+                                                  </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                             </center>
+                                          </BorderPane>
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <BorderPane prefHeight="57.0" prefWidth="1300.0" style="-fx-background-color: black;">
+         <right>
+            <VBox alignment="BOTTOM_RIGHT" prefHeight="58.0" prefWidth="456.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Alfa-Alfa Sürümü@" textFill="WHITE" />
+               </children>
+            </VBox>
+         </right>
+         <left>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="646.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="672.0" text="Tır Otomasyon Sistemi" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </left></BorderPane>
+      <HBox alignment="CENTER_LEFT" layoutY="797.0" prefHeight="25.0" prefWidth="1300.0" spacing="20.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../İste.png" />
+               </image>
+            </ImageView>
+            <Label text="İskenderun Teknik Üniversitesi Tır Otomasyonu" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="965.0" spacing="20.0">
+               <children>
+                  <Label text="İletişim için: egemender.mdbf20@iste.edu.tr " />
+                  <Label layoutX="890.0" layoutY="14.0" text="Egemen Der" />
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

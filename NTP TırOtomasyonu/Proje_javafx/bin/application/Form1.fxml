@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form1Controller">
+   <children>
+      <TextField fx:id="usr_txt" layoutX="218.0" layoutY="189.0" style="-fx-background-radius: 10;" styleClass="login_txt's" />
+      <Label fx:id="usr_lbl" layoutX="133.0" layoutY="192.0" text="Username :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="230.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="lgn_btn" alignment="CENTER" layoutX="247.0" layoutY="292.0" mnemonicParsing="false" onAction="#lgn_btn_Click" prefHeight="31.0" prefWidth="91.0" style="-fx-background-radius: 10;" text="Login" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="adm_link" layoutX="256.0" layoutY="332.0" onAction="#AdminFormGec" style="-fx-background-color: white;" text="Admin Girişi" />
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label text="Welcome!">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label text="Please Login for can see page">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <PasswordField fx:id="pswd_txt" layoutX="218.0" layoutY="227.0" style="-fx-background-radius: 10;" styleClass="login_txt's" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="56.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../İste.png" />
+         </image></ImageView>
+      <Text layoutX="256.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NTP Tır Otomasyonuna Hoşgeldiniz.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="367.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Egemen Der" />
+   </children>
+</AnchorPane>
